@@ -1,0 +1,1 @@
+# PureBasic_Japanese_Language_Pack
