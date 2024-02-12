@@ -2,6 +2,7 @@
 
 PureBasic日本語化パック
 
+http://htlab.net/computer/programming/purebasic/purebasic-japanese/
 
   
 ## How to Use
