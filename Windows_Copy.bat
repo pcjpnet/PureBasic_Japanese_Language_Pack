@@ -8,5 +8,5 @@ if %errorlevel% neq 0 (
  exit
 )
 
-rmdir "C:\Program Files\PureBasic\Catalogs\Japanese"
+xcopy /I "%~dp0Japanese" "C:\Program Files\PureBasic\Catalogs\Japanese"
 

@@ -13,7 +13,7 @@ http://htlab.net/computer/programming/purebasic/purebasic-japanese/
   
 OR
   
-1. Run "Windows_Junction_Create.bat"
+1. Run "Windows_Junction_Create.bat" / "MacOSX_SymbolicLink_Create.sh"
 1. Change Language Settings
 1. (This Folder cannot be deleted)
 
@@ -27,7 +27,7 @@ OR
   
 または
   
-1. "Windows_Junction_Create.bat"を実行します
+1. "Windows_Junction_Create.bat" または "MacOSX_SymbolicLink_Create.sh" を実行します
 1. 言語設定を変更します
 1. （このフォルダは消せません）
 
