@@ -5,317 +5,317 @@
 [LanguageInfo]
 Application = PB_Libraries
 Language    = Japanese
-LastUpdated = 2024/02/13
+LastUpdated = 2024/02/20
 Creator     = 菊地 秀人 (Hideto Kikuchi) / @pcjpnet
 Email       = webmaster [at] pc-jp.net
 
 
 [Common]
-InitNeeded        = %s must be called successfully before using any %s commands.
-ScreenNeeded      = OpenScreen() or OpenWindowedScreen() must be called before using any %s commands.
-CallOnce          = %s can be called only once.
-CallNeeded        = %s must be successfully called before calling %s.
-CallNeededAny     = %s must be successfully called before using this command.
-CallNeededLib     = %s must be called before another %s function.
-NoDrawingCall     = can't be called inside a StartDrawing()/StopDrawing() block.
-HighNumber        = %s object number is very high (over %i), are You sure of that ?
-NoObject          = The specified %s is not initialised.
-NullAddress       = Procedure address is null.
-NullBuffer        = The specified buffer is 0.
-NullPointer       = The specified pointer is null.
-NullArgument      = The specified '%s' is null.
-InvalidArgument   = The specified '%s' is not valid.
-NullLength        = The specified length is 0.
-NegativeLength    = The specified length is negative.
-NegativeSize      = The specified size is negative.
-InvalidLength     = The specified length is not valid.
-Negative          = The specified '%s' is negative.
-NullNegative      = The specified '%s' is 0 or negative.
-FileNotFound      = The specified file does not exist.
-InvalidPort       = 'Port' is not a valid port number.
-OutOfRange        = '%s' is out of range.
-NoLabel           = The specified '%s' is not a Label pointer.
-NoProcedure       = The specified '%s' is not a Procedure pointer.
-WrongType         = The Procedure specified in '%s' does not have the required argument or returntype.
-AmbiguousElements = The Structure '%s' contains ambiguous elements '%s' and '%s'.
-InvalidValue      = %s(): invalid value specified for parameter '%s'.
+InitNeeded        = %s を正常に呼び出してから %s コマンドを使用する必要があります
+ScreenNeeded      = OpenScreen() または OpenWindowedScreen() を %s コマンドの前に必ず呼び出す必要があります
+CallOnce          = %s は1回だけ呼び出すことができます
+CallNeeded        = %s を正常に呼び出してから %s を呼び出す必要があります
+CallNeededAny     = %s を正常に呼び出してからこのコマンドを使用する必要があります
+CallNeededLib     = %s を正常に呼び出してから %s 関数を呼び出す必要があります
+NoDrawingCall     = StartDrawing()/StopDrawing() ブロック内で呼び出すことはできません
+HighNumber        = %s オブジェクト番号が非常に高い（%i 以上）、よろしいですか？
+NoObject          = 指定された %s は初期化されていません
+NullAddress       = プロシージャアドレスが Null です
+NullBuffer        = 指定されたバッファは 0 です
+NullPointer       = 指定されたポインターは Null です
+NullArgument      = 指定された '%s' は Null です
+InvalidArgument   = 指定された '%s' は無効です
+NullLength        = 指定された長さは 0 です
+NegativeLength    = 指定された長さは負です
+NegativeSize      = 指定されたサイズは負です
+InvalidLength     = 指定された長さは無効です
+Negative          = 指定された '%s' は負です
+NullNegative      = 指定された '%s' は 0 か負です
+FileNotFound      = 指定されたファイルは存在しません
+InvalidPort       = 'ポート'は有効なポート番号ではありません
+OutOfRange        = '%s' は範囲外です
+NoLabel           = 指定された '%s' ラベルポインターではありません
+NoProcedure       = 指定された '%s' プロシージャポインターではありません
+WrongType         = '%s' で指定されたプロシージャには、必要な引数または戻り値の型がありません
+AmbiguousElements = 構造体 '%s' に曖昧な要素 '%s' と '%s' が含まれています
+InvalidValue      = %s(): 無効な値が指定されました '%s'.
 
 [2DDrawing]
-PlotOutside     = Plot() is outside the drawing area.
-PointOutside    = Point() is outside the drawing area.
-NullOutput      = The specified output is NULL (0 value).
-InvalidOutput   = The specified output is invalid.
-NullFontID      = The specified FontID is NULL (0 value).
-NeedStopDrawing = StopDrawing() must be called before calling StartDrawing() again.
-NoStartDrawing  = StopDrawing() must be called only after a successful StartDrawing().
+PlotOutside     = Plot() は描画領域の外にあります
+PointOutside    = Point() は描画領域の外にあります
+NullOutput      = 指定された出力は Null（値0）です
+InvalidOutput   = 指定された出力は無効です
+NullFontID      = 指定された FontID は Null（値0）です
+NeedStopDrawing = StopDrawing() を呼び出す前に StartDrawing() を呼び出す必要があります
+NoStartDrawing  = StopDrawing() は StartDrawing() の呼び出しが成功したあとに呼び出す必要があります
 
 [AudioCD]
-NoCurrent  = There is no current AudioCD unit selected.
-NoTrack    = Specified track number to big: Track non-existent
-OutOfRange = Specified AudioCD unit is out of range
+NoCurrent  = 現在選択されている AudioCD ユニットがありません
+NoTrack    = 指定されたトラック番号が大きい：トラックが存在しません
+OutOfRange = 指定された AudioCD ユニットが範囲外です
 
 [Camera]
-InvalidCameraWidth  = Invalid camera width (valid range is 0 to 100).
-InvalidCameraHeight = Invalid camera height (valid range is 0 to 100).
+InvalidCameraWidth  = 無効なカメラの幅（有効範囲は 0 から 100）
+InvalidCameraHeight = 無効なカメラの高さ（有効範囲は 0 から 100）
 
 [CGI]
-InvalidIndex     = Invalid 'Index' value.
-InvalidLocalPort = 'LocalPort' is not a valid port number.
+InvalidIndex     = 無効な 'Index' 値
+InvalidLocalPort = 'LocalPort' は有効なポート番号ではありません
 
 [Cipher]
-SmallOutput              = The OutputLength should be at least 33% more than the InputLength.
-WrongKeySize             = The key size for AES has to be 128, 192 or 256.
-NullKeyBuffer            = The key buffer is null.
-NullInitializationVector = *InitializationVector can't be null when using #PB_Cipher_CBC.
-MinimalBufferSize        = The minimum buffer size for AES is 16 bytes.
-PluginMissing            = The specified cipher plugin is missing.
+SmallOutput              = OutputLength は InputLength より少なくとも 33% 大きくなければなりません
+WrongKeySize             = AES のキーサイズは 128, 192 または 256 である必要があります
+NullKeyBuffer            = キーバッファが Null です
+NullInitializationVector = #PB_Cipher_CBC を使用する場合 *InitializationVector を Null にすることはできません
+MinimalBufferSize        = AES の最小バッファサイズは 16 バイトです
+PluginMissing            = 指定された暗号プラグインがありません
 
 [Console]
-NoConsole   = No console is currently opened. OpenConsole() must be called first.
-WrongColor  = Console color values must be between 0 and 15.
-NoGraphical = This command is not supported in graphical mode.
+NoConsole   = 現在開いているコンソールはありません OpenConsole()を最初に呼び出す必要があります
+WrongColor  = コンソールの色の値は 0 から 15 で指定する必要があります
+NoGraphical = このコマンドはグラフィカルモードではサポートされていません
 
 [Database]
-InvalidLibraryNameSQLite = Empty dynamic library filename not allowed.
-NoPlugin                 = UseODBCDatabase(), UseSQLiteDatase() or UsePostgreSQLDatabase() need to be called before using database commands.
-InvalidIndex             = 'StatementIndex' parameter can't be negative.
-InvalidColumnIndex       = 'Column' index can't be negative.
+InvalidLibraryNameSQLite = 空のダイナミックライブラリファイル名は許可されません
+NoPlugin                 = データベースコマンドを使用する前に UseODBCDatabase(), UseSQLiteDatase() または UsePostgreSQLDatabase() を呼び出す必要があります
+InvalidIndex             = 'StatementIndex' パラメータを負の値にすることはできません
+InvalidColumnIndex       = 'Column' インデックスを負の値にすることはできません
 
 [DragDrop]
-InvalidAction  = Invalid value for 'Action'.
-ZeroAction     = #PB_Drag_None cannot be specified as 'Action'.
-NoEvent        = No Drag&Drop event has take place.
-EmptyList      = Cannot drag an empty list of files.
-EmptyString    = Cannot drag an empty string.
-NoFileEvent    = The Drag&Drop Event was not a #PB_Drop_Files Event.
-NoImageEvent   = The Drag&Drop Event was not a #PB_Drop_Image Event.
-NoPrivateEvent = The Drag&Drop Event was not a #PB_Drop_Private Event.
-NoTextEvent    = The Drag&Drop Event was not a #PB_Drop_Text Event.
+InvalidAction  = 'Action' の値が無効です
+ZeroAction     = 'Action' として #PB_Drag_None を指定することはできません
+NoEvent        = ドラッグ&ドロップイベントは発生しません
+EmptyList      = 空のファイルリストはドラッグできません
+EmptyString    = 空の文字列はドラッグできません
+NoFileEvent    = ドラッグ&ドロップイベントは #PB_Drop_Files イベントではありませんでした
+NoImageEvent   = ドラッグ&ドロップイベントは #PB_Drop_Image イベントではありませんでした
+NoPrivateEvent = ドラッグ&ドロップイベントは #PB_Drop_Private イベントではありませんでした
+NoTextEvent    = ドラッグ&ドロップイベントは #PB_Drop_Text イベントではありませんでした
 
 [Engine3D]
-NotInitialized    = InitEngine3D() must be called successfully before using the 3D commands set.
-NoTerrain         = No terrain are currently created.
-CallBeforeSprites = InitEngine3D() has to be called before InitSprite().
+NotInitialized    = 3Dコマンドセットを使用する前に InitEngine3D() を正常に呼び出す必要があります
+NoTerrain         = 現在作成されている地形はありません
+CallBeforeSprites = InitEngine3D() は InitSprite() の前に呼び出す必要があります
 
 [Entity]
-NegativeScale = Scale value can't be negative.
+NegativeScale = スケール値を負にすることはできません
 
 [Event]
-WindowAll = When using #PB_All for 'Window', 'Object' and 'EventType' has to be set to #PB_All as well.
-ObjectAll = When using #PB_All for 'Object', 'EventType' has to be set to #PB_All as well.
+WindowAll = 'Window' に #PB_All を設定する場合は 'Object' と 'EventType' にも #PB_All を設定する必要があります
+ObjectAll = 'Object' に #PB_All を設定する場合は 'EventType' にも #PB_All を設定する必要があります
 
 [File]
-NegativeSeek       = Cannot absolute seek to a negative position .
-SeekBehindEnd      = Cannot absolute seek beyond the end of the file.
-NegativeBufferSize = The buffer size can't be negative.
+NegativeSeek       = 負の位置への絶対シークはできません
+SeekBehindEnd      = ファイルの末尾を超えて絶対シークすることはできません
+NegativeBufferSize = バッファ サイズを負にすることはできません
 
 [Gadget]
-NeedOpenGadgetList   = OpenGadgetList() must be called before calling AddGadgetItem() again on this Gadget.
-NoOpenGadgetList     = CloseGadgetList() can only be called after OpenGadgetList() or container gadgets.
-NoGadgetList         = There is no current GadgetList.
-NotDifferent         = #Gadget1 and #Gadget2 must be different.
-SplitterChilds       = Cannot create SplitterGadget with same Number as one of its childs.
-ScrollBarRange       = ScrollBar range must be between 0 and 10000
-MaxGadgetWidth       = Maximum supported gadget width is 32767 pixels
-MaxGadgetHeight      = Maximum supported gadget height is 32767 pixels
-NegativeGadgetWidth  = Gadget width can't be negative
-NegativeGadgetHeight = Gadget height can't be negative
+NeedOpenGadgetList   = このガジェットでは AddGadgetItem() を再度呼び出す前に OpenGadgetList() を呼び出す必要があります
+NoOpenGadgetList     = CloseGadgetList() は OpenGadgetList() かコンテナガジェットの後に呼び出すことができます
+NoGadgetList         = 現在のガジェットリストはありません
+NotDifferent         = #Gadget1 と #Gadget2 は異なっている必要があります
+SplitterChilds       = 子の1つと同じ番号を持つ SplitterGadget は作成できません
+ScrollBarRange       = ScrollBar 範囲は 0 から 10000 でなければなりません
+MaxGadgetWidth       = サポートされるガジェットの最大幅は 32767 ピクセルです
+MaxGadgetHeight      = サポートされるガジェットの最大高は 32767 ピクセルです
+NegativeGadgetWidth  = ガジェットの幅を負の値にすることはできません
+NegativeGadgetHeight = ガジェットの高さを負の値にすることはできません
 
 [Gadget3D]
-NotDifferent   = #Gadget3D1 and #Gadget3D2 must be different.
-SplitterChilds = Cannot create SplitterGadget3D with same Number as one of its childs.
-NeedAWindow    = A 3D window needs to be opened before adding gadgets on it.
+NotDifferent   = #Gadget3D1 と #Gadget3D2 は異なっている必要があります
+SplitterChilds = 子の1つと同じ番号を持つ SplitterGadget3D は作成できません
+NeedAWindow    = 3Dウィンドウにガジェットを追加する前に、3Dウィンドウを開く必要があります
 
 [Image]
-HeightLarge        = Image 'Height' is > 32000 pixels.
-WidthLarge         = Image 'Width' is > 32000 pixels.
-InvalidDepth       = Invalid image 'Depth': possible values are 24 and 32.
-InvalidSaveDepth   = Invalid 'Depth': possible values are 1, 2, 4, 8, 24 and 32.
-IconNotResizable   = The #Image in the icon (.ico) format can't be resized.
-HeightSmall        = Image 'Height' is too small, should be > 0.
-WidthSmall         = Image 'Width' is too small, should be > 0.
-InvalidImageFrame  = Image frame out of bounds.
-MultiFrameNoResize = Multi-frame image can't be resized.
+HeightLarge        = 画像の 'Height' が 32000 ピクセルを超えています
+WidthLarge         = 画像の 'Width' が 32000 ピクセルを超えています
+InvalidDepth       = 画像の 'Depth' が無効です： 可能な値は 24 と 32 です
+InvalidSaveDepth   = 無効な 'Depth'： 可能な値は 1, 2, 4, 8, 24 と 32 です
+IconNotResizable   = アイコン（.ico）フォーマットの #Image はリサイズできません
+HeightSmall        = 画像の 'Height' が小さすぎます。0より大きい必要があります
+WidthSmall         = 画像の 'Width' が小さすぎます。0より大きい必要があります
+InvalidImageFrame  = 画像フレームが範囲外です
+MultiFrameNoResize = マルチフレーム画像はリサイズできません
 
 [Joystick]
-ButtonInvalid = Button number out of range. Should be between 1 and 32.
+ButtonInvalid = ボタン番号が範囲外です。 1 から 32 である必要があります
 
 [Json]
-NullValue         = Invalid JSON value. (0)
-ExpectTypeString  = A JSON value of type string is expected.
-ExpectTypeNumber  = A JSON value of type number is expected.
-ExpectTypeBoolean = A JSON value of type boolean is expected.
-ExpectTypeArray   = A JSON value of type array is expected.
-ExpectTypeObject  = A JSON value of type object is expected.
-InvalidIndex      = Array index out of bounds.
-NoExamine         = There is no current examined member in this object.
+NullValue         = 無効なJSON値 (0)
+ExpectTypeString  = 文字列型のJSON値が必要です
+ExpectTypeNumber  = 数値型のJSON値が必要です
+ExpectTypeBoolean = ブール型のJSON値が必要です
+ExpectTypeArray   = 配列型のJSON値が必要です
+ExpectTypeObject  = オブジェクト型のJSON値が必要です
+InvalidIndex      = 配列インデックスが範囲外です
+NoExamine         = このオブジェクトには現在検査されているメンバーがありません
 
 [Library]
-WrongIndex = The index value for GetFunctionEntry() starts from 1.
+WrongIndex = GetFunctionEntry() のインデックス値は1から始まります
 
 [LinkedList]
-NotInitialized  = LinkedList not initialised.
-NegativeIndex   = SelectElement(): index value can not be negative.
-FirstNull       = SwapElement(): first element is null.
-SecondNull      = SwapElement(): second element is null.
-NoCurrent       = The LinkedList has no current element.
-RelativeNull    = A *RelativeElement has to be specified.
-PushedElement   = Cannot delete a pushed current element.
-PushedElement2  = Cannot move a pushed current element to another list.
-NoPushedElement = There is no remembered current element to restore.
+NotInitialized  = 連結リストが初期化されていません
+NegativeIndex   = SelectElement(): インデックス値を負にすることはできません
+FirstNull       = SwapElement(): 最初の要素はNullです
+SecondNull      = SwapElement(): 2番目の要素はNullです
+NoCurrent       = 連結リストに現在の要素がありません
+RelativeNull    = *RelativeElement を指定する必要があります
+PushedElement   = プッシュされた現在の要素は削除できません
+PushedElement2  = プッシュされた現在の要素を別のリストに移動できません
+NoPushedElement = 復元するための記憶されている現在の要素がありません
 
 [Map]
-NotInitialized  = Map not initialized.
-NoCurrent       = The Map has no current element.
-PushedElement   = Cannot delete a pushed current element.
-NoPushedElement = There is no remembered current element to restore.
+NotInitialized  = マップが初期化されていません
+NoCurrent       = マップには現在の要素がありません
+PushedElement   = プッシュされた現在の要素は削除できません
+NoPushedElement = 復元するための記憶されている現在の要素がありません
 
 [Math]
-MinNegative    = Min value can't be negative.
-MaxNegative    = Max value can't be negative.
-MinSuperiorMax = Min value can't be superior to Max value.
+MinNegative    = 最小値を負にすることはできません
+MaxNegative    = 最大値を負にすることはできません
+MinSuperiorMax = 最小値が最大値を超えることはできません
 
 [Memory]
-NullAddress   = Specified address is null.
-NullAlloc     = Can't allocate a memory block of size 0.
-NegativeAlloc = Can't allocate a memory block with a negative size.
-NullSource    = Source memory pointer is 0.
-NullDest      = Destination memory pointer is 0.
-WrongLength   = Specified length is < -1.
-WrongSize     = Specified size is < -1.
+NullAddress   = 指定されたアドレスはNullです
+NullAlloc     = サイズ 0 のメモリブロックを割り当てることができません
+NegativeAlloc = 負のサイズのメモリブロックを割り当てることはできません
+NullSource    = ソースメモリポインタは 0 です
+NullDest      = 宛先メモリ ポインタは 0 です
+WrongLength   = 指定された長さは -1 未満です
+WrongSize     = 指定されたサイズは -1 未満です
 
 [Menu]
-NoCurrent = There is no current Menu.
+NoCurrent = 現在のメニューはありません
 
 [Mesh]
-Add3DArchiveBeforeLoadMesh = Add3DArchive has to be called at least once before LoadMesh().
+Add3DArchiveBeforeLoadMesh = Add3DArchive は LoadMesh() の前に少なくとも1回呼び出す必要があります
 
 [Music]
-InvalidVolume = The volume must be between 0 and 100
+InvalidVolume = ボリュームは 0 から 100 でなければなりません
 
 [Network]
-NegativeTimeOut     = OpenNetworkConnection() timeout can not be negative.
-IPv6FieldOutOfRange = IPAddressField() field index has to be between 0 and 7 for IPv6 address.
-IPv4FieldOutOfRange = IPAddressField() field index has to be between 0 and 3 for IPv4 address.
-InvalidLocalPort    = 'LocalPort' is not a valid port number.
+NegativeTimeOut     = OpenNetworkConnection() のタイムアウトを負の値にすることはできません
+IPv6FieldOutOfRange = IPAddressField() フィールドインデックスはIPv6アドレスの場合、0から7である必要があります
+IPv4FieldOutOfRange = IPAddressField() フィールドインデックスはIPv4アドレスの場合、0から3である必要があります
+InvalidLocalPort    = 'LocalPort'は有効なポート番号ではありません
 
 [Node]
-ObjectNotAttached = The specified object isn't attached the node.
-NegativeScale     = Scale value can't be negative.
+ObjectNotAttached = 指定されたオブジェクトはノードにアタッチされていません
+NegativeScale     = スケール値を負にすることはできません
 
 [OnError]
-DebuggerPresent = The OnError library may not catch all errors with enabled debugger.
-LinesDisabled   = The OnError lines support is not enabled.
-NoHandler       = This function can only be called inside an error handler.
+DebuggerPresent = OnErrorライブラリは、有効なデバッガですべてのエラーをキャッチできない可能性があります
+LinesDisabled   = OnError行のサポートは有効になっていません
+NoHandler       = この関数はエラーハンドラ内でのみ呼び出すことができます
 
 [Packer]
-NoPack = No pack file is currently opened.
+NoPack = 現在開かれているパックファイルはありません
 
 [Preference]
-InvalidKeyword             = The keyword$ for Read/WritePreference() functions is not valid.
-KeywordForbiddenCharacters = The keyword$ for Read/WritePreference() can't contain '=', 'LF' or 'CR' characters.
+InvalidKeyword             = Read/WritePreference() 関数の keyword$ が無効です
+KeywordForbiddenCharacters = Read/WritePreference() 関数の keyword$ には '=', 'LF' または 'CR' 文字を含めることはできません
 
 [Process]
-InvalidName  = The Environment Variable name is empty.
-NoVariable   = No current environment Variable.
-ProgramEnded = The Program is no longer running.
-FileNeeded   = A Filename must be specified.
-Flags1       = Invalid Flags: Cannot combine #PB_Program_Wait with the communication flags.
-Flags2       = Invalid Flags: #PB_Program_Open MUST be set to use the communication flags.
-NotEnded     = The Program has not yet closed. (ExitCode not available)
-NullRead     = Cannot read 0 number of bytes from the Program.
-NullWrite    = Cannot write 0 number of bytes to the Program.
+InvalidName  = 環境変数名が空です
+NoVariable   = 現在の環境変数はありません
+ProgramEnded = プログラムはもう実行されていません
+FileNeeded   = ファイル名を指定する必要があります
+Flags1       = 無効なフラグ：#PB_Program_Wait と通信フラグを組み合わせることはできません
+Flags2       = 無効なフラグ：#PB_Program_Open は通信フラグを使用するように設定する必要があります
+NotEnded     = プログラムはまだ終了していません（終了コードは使用できません）
+NullRead     = プログラムから 0 バイトを読み取ることができません
+NullWrite    = プログラムに 0 バイトを書き込むことができません
 
 [RegularExpression]
-WrongType       = Result array for ExtractRegularExpression() has to be of string type.
-WrongDimensions = Result array for ExtractRegularExpression() can't have more than 1 dimension.
-NoCurrentMatch  = There is no current match being examined.
-NoGroups        = There are no groups in this regular expression.
-GroupNotFound   = The specified named group does not exist.
+WrongType       = ExtractRegularExpression() の結果配列は文字列型である必要があります
+WrongDimensions = ExtractRegularExpression() の結果配列には1つ以上の次元を含めることはできません
+NoCurrentMatch  = 現在検査されている一致はありません
+NoGroups        = この正規表現にはグループがありません
+GroupNotFound   = 指定された名前付きグループは存在しません
 
 [Screen]
-NoScreen       = There is no open screen.
-WrongDepth     = The screen depth must be 4, 8, 16, 24 or 32.
-WrongGamma     = A gamma value has to be between 0 and 255.
-WrongFrameRate = Frame rate can't be less than 1.
+NoScreen       = 開いている画面がありません
+WrongDepth     = 画面の深度は 4, 8, 16, 24 または 32 である必要があります
+WrongGamma     = ガンマ値は 0 から 255 でなければなりません
+WrongFrameRate = フレームレートを1未満にすることはできません
 
 [Sort]
-MultiDimensionedArrayNotSupported = Multi-dimensioned array is not support by SortArray().
-NotSimpleList                     = SortList() can't be used with a structured list.
-NotStructuredList                 = SortStructuredList() can't be used with a non structured list.
+MultiDimensionedArrayNotSupported = 多次元配列は SortArray() ではサポートされていません
+NotSimpleList                     = SortList() は構造体リストでは使用できません
+NotStructuredList                 = SortStructuredList() は非構造体リストでは使用できません
 
 [SpecialEffect]
-InvalidNbChains   = NbChains needs to be greater than 0.
-InvalidNbElements = NbElements needs to be greater than 0.
-InvalidLength     = Length needs to be greater than 0.
+InvalidNbChains   = NbChains は 0 より大きい必要があります
+InvalidNbElements = NbElements は 0 より大きい必要があります
+InvalidLength     = 長さは 0 より大きい必要があります
 
 [Sprite]
-EqualID          = Sprite1 and Sprite2 have the same ID.
-NoPixelCollision = A sprite should be created with the flag #PB_Sprite_PixelCollision to support SpritePixelCollision() command.
-NoStartDrawing   = This function can't be called inside a StartDrawing()/StopDrawing() block.
+EqualID          = Sprite1 と Sprite2 は同じIDを持ちます
+NoPixelCollision = SpritePixelCollision() コマンドをサポートするにはフラグ #PB_Sprite_PixelCollision を使用してスプライトを作成する必要があります
+NoStartDrawing   = この関数は StartDrawing()/StopDrawing() ブロック内で呼び出すことはできません
 
 [StatusBar]
-NoCurrent     = There is no current StatusBar.
-TooManyFields = More fields than 64 are not allowed.
-WidthHigh     = Width cannot be bigger than 8192.
+NoCurrent     = 現在のステータスバーはありません
+TooManyFields = 64 を超えるフィールドは許可されません
+WidthHigh     = 幅を 8192 より大きくすることはできません
 
 [String]
-IncorrectTrimCharacterLength  = 'Character$' length for Trim() has to be one.
-IncorrectLTrimCharacterLength = 'Character$' length for LTrim() has to be one.
-IncorrectRTrimCharacterLength = 'Character$' length for RTrim() has to be one.
-NegativeDecimalNumber         = Number of decimals for StrF() or StrD() can't be negative.
-InvalidSringFieldIndex        = Field index for StringField() invalid, should be at least 1.
+IncorrectTrimCharacterLength  = Trim() の'Character$'長さは1でなければなりません
+IncorrectLTrimCharacterLength = LTrim() の'Character$'長さは1でなければなりません
+IncorrectRTrimCharacterLength = RTrim() の'Character$'長さは1でなければなりません
+NegativeDecimalNumber         = StrF() または StrD() の小数点以下の桁数を負にすることはできません
+InvalidSringFieldIndex        = StringField() のフィールドインデックスが無効です。少なくとも1である必要があります
 
 [Terrain]
-TerrainBeforeCamera = The terrain has to be created before any cameras.
+TerrainBeforeCamera = カメラの前に地形を作成する必要があります
 
 [Text3D]
-NegativeScale = Scale value can't be negative.
+NegativeScale = スケール値を負にすることはできません
 
 [Texture]
-Add3DArchiveBeforeLoadTexture = Add3DArchive has to be called at least once before LoadTexture().
+Add3DArchiveBeforeLoadTexture = LoadTexture() の前に少なくとも1回 Add3DArchive を呼び出す必要があります
 
 [Thread]
-InvalidThread    = The specified Thread does not exists.
-InvalidMutex     = The specified Mutex does not exist.
-InvalidSemaphore = The specified Semaphore does not exist.
+InvalidThread    = 指定されたスレッドは存在しません
+InvalidMutex     = 指定されたミューテックスは存在しません
+InvalidSemaphore = 指定されたセマフォは存在しません
 
 [Toolbar]
-NeedXPSkins = Modern XP theme needs to be enabled to use #PB_ToolBar_Text.
+NeedXPSkins = #PB_ToolBar_Text を使用するにはモダンXPテーマを有効にする必要があります
 
 [VectorDrawing]
-NoSavedState     = There is no saved drawing state to restore.
-NoLayer          = There is no drawing layer to end.
-OpenLayer        = There is still an unfinished drawing layer on this output.
-SinglePage       = The current output is not a multi-page drawing output.
-FixedCoordinate  = The specified coordinate system is not modifiable.
-InvalidDashArray = The specified array is not a one-dimensional array with double values.
+NoSavedState     = 復元する保存された描画状態がありません
+NoLayer          = 終了する描画レイヤーがありません
+OpenLayer        = この出力には未完成の描画レイヤーがまだあります
+SinglePage       = 現在の出力は複数ページの描画出力ではありません
+FixedCoordinate  = 指定された座標系は変更できません
+InvalidDashArray = 指定された配列はDouble値を持つ1次元配列ではありません
 
 [Window]
-NeedOneWindow             = At least one window should be opened to use this command.
-InvalidParent             = ParentID is not a valid WindowID().
-InvalidEvent              = The 'Event' value of AddKeyboardShortcut() has to be between 0 and 64000.
-OpenWindowMainThread      = OpenWindow() can only be called from the main thread.
-WindowEventMainThread     = WindowEvent() and WaitWindowEvent() can only be called from the main thread.
-WindowEventInsideCallback = WindowEvent() and WaitWindowEvent() can not be called from a 'binded' event callback.
+NeedOneWindow             = このコマンドを使用するには、少なくとも1つのウィンドウを開く必要があります
+InvalidParent             = ParentID は有効な WindowID() ではありません
+InvalidEvent              = AddKeyboardShortcut() の'Event'値は 0 から 64000 である必要があります
+OpenWindowMainThread      = OpenWindow() はメインスレッドからのみ呼び出すことができます
+WindowEventMainThread     = WindowEvent() および WaitWindowEvent() は、メインスレッドからのみ呼び出すことができます
+WindowEventInsideCallback = WindowEvent() および WaitWindowEvent() は、バインドされたイベントコールバックから呼び出すことはできません
 
 [Window3D]
-BeforeAnyWindow = SetGUITheme3D() has to be called before any other Window3D command.
+BeforeAnyWindow = SetGUITheme3D() は、他のWindow3Dコマンドの前に呼び出す必要があります
 
 [Xml]
-NullNode             = Invalid XML Node. (0)
-InvalidIndex         = Index must be >= 1.
-NoNameNode           = This type of XML node does not have a name.
-InvalidNodeName      = Invalid node name.
-InvalidAttributeName = Invalid attribute name.
-NoAttributeNode      = This type of XML node cannot have attributes.
-NoChildren           = A Comment/CData/DTD node cannot have children.
-PreviousWrongTree    = The given previous node is not in the same XML tree as the parent node.
-PreviousDirectChild  = The given previous node is not a direct child of the parent node.
-CannotCreateRoot     = A root node cannot be created manually.
-CannotMoveRoot       = The root node cannot be copied/moved.
-CannotDeleteRoot     = The root node of an XML tree cannot be deleted.
-CannotMove1          = The node cannot be moved into itself. (ParentNode is a child or grandchild of Node)
-CannotMove2          = The node to move and the PreviousNode are equal.
-CannotMove3          = The node cannot be moved into itself. (Node and ParentNode are equal)
+NullNode             = 無効なXMLノード (0)
+InvalidIndex         = インデックスは1以上である必要があります
+NoNameNode           = このタイプのXMLノードに名前がありません
+InvalidNodeName      = 無効なノード名
+InvalidAttributeName = 無効な属性名
+NoAttributeNode      = このタイプのXMLノードは属性を持つことができません
+NoChildren           = Comment/CData/DTDノードは子を持つことができません
+PreviousWrongTree    = 指定された前のノードは、親ノードと同じXMLツリー内にありません
+PreviousDirectChild  = 指定された前のノードは、親ノードの直接の子ではありません
+CannotCreateRoot     = ルートノードを手動で作成できません
+CannotMoveRoot       = ルートノードをコピー/移動できません
+CannotDeleteRoot     = XMLツリーのルートノードは削除できません
+CannotMove1          = ノードをそれ自体に移動することはできません（ParentNodeはNodeの子または孫です）
+CannotMove2          = 移動するノードとPreviousNodeが同じです
+CannotMove3          = ノードをそれ自体に移動することはできません（NodeとParentNodeは同じです）
 
